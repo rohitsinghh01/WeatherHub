@@ -30,6 +30,21 @@ h3 {
   justify-content: center;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 15px;
+}
+
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px;
+}
+
 header a {
   text-decoration: none;
   color: whitesmoke;
@@ -37,7 +52,7 @@ header a {
 }
 
 .nav a {
-  padding-left: 1rem;
+  padding-left: 2.5rem;
 }
 
 header a:hover {
@@ -53,6 +68,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 5%;
 }
 
 .content .info {
@@ -149,7 +165,105 @@ footer {
 footer p {
   margin: 0;
   text-align: center;
-  line-height: 5rem;
+  line-height: 4rem;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+.about {
+  margin-top: 2.5%;
+}
+#about-img {
+  width: 50%;
+  text-align: center;
+}
+
+.about-info {
+  width: 30%;
+}
+.about-info h1 {
+  font-size: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: auto;
+  }
+  .info h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .info p {
+    font-size: 1.2rem;
+  }
+  .navbar {
+    height: 170px;
+    font-size: 1rem;
+    flex-direction: column;
+    transition: all 0.5s ease-out;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .burger {
+    display: block;
+  }
+  .h-nav-resp {
+    height: 70px;
+  }
+
+  .v-nav-resp {
+    opacity: 0;
+  }
+  #about-img img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 80px;
+  }
+  .content .info {
+    margin-left: 20px;
+    width: 80%;
+  }
+  .content .slider-con {
+    margin-top: 40px;
+    width: 80%;
+    margin: 40px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .line {
+    width: 25px;
+    height: 2px;
+    margin: 6px;
+  }
+
+  footer p {
+    line-height: 1.5rem;
+    font-size: 0.5rem;
+  }
+  .about {
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+  }
+  .content .about-info{
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  #about-img{
+    margin-right: 45px;
+  }
+  .info p {
+    margin-top: 20px;
+    margin-bottom: 6px;
+
+}
 }
