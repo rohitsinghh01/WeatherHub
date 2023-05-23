@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h3 {
+  font-weight: 300;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e272e;
+  color: whitesmoke;
+  padding: 1rem 5rem;
+  font-size: 1.1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+
+.nav a {
+  padding-left: 1rem;
+}
+
+header a:hover {
+  color: #0097e6;
+  transition: 0.2s ease;
+}
+
+i {
+  color: #0097e6;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content .info {
+  width: 50%;
+}
+.content .slider-con {
+  width: 50%;
+  margin: 30px;
+}
+
+#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 10s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+}
+
+.content .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 60px;
+}
+
+.info p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+.info h1 {
+  font-weight: 500;
+  width: 91%;
+  font-size: 2.5rem;
+}
+.info span {
+  color: #0097e6;
+}
+
+.content button {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  box-shadow: black 0px 8px 6px -6px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  outline: none;
+}
+.content button:hover {
+  box-shadow: 0 8px 6px -6px #0097e6;
+}
+
+footer {
+  width: 100%;
+  background-color: #1e272e;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  line-height: 5rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
